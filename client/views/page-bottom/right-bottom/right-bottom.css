@@ -1,0 +1,9 @@
+.right-bottom {
+    right: 5px;
+    position: relative;
+    width: 33px;
+    bottom: 50px;
+    z-index: 101;
+    height: 100px;
+    float: right;
+}

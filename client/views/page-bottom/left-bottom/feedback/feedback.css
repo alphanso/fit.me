@@ -1,0 +1,24 @@
+#feedback {
+    z-index: 0;
+    position: relative;
+    left : 0px;
+    display: block;
+    border-radius: 0px 4px 4px 0px !important;
+    padding: 10px 3px;
+    color: #FFF;
+    background-color: rgba(139, 206, 92, 0.81) !important;
+    border-width: 1px 1px medium;
+    border-style: solid solid none;
+    border-color: #FFF #FFF -moz-use-text-color;
+    -moz-border-top-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    border-image: none;
+    font-size: 16px !important;
+    width: 50px;
+}
+
+#feedback:hover {
+    cursor: pointer;
+}

@@ -1,0 +1,16 @@
+<template name="rightTop" >
+  <div id="right-top" class="col-md-4" style="position: relative;">
+      {{#if currentUser}}
+        {{> loggedIn}}
+      {{else}}
+          <div class="btn-group" role="group" style="float: right;">
+              <button id="signUp" class="btn btn-default" data-toggle="modal" data-target="#signUpModal">
+                  Sign Up
+              </button>
+              <button id="logIn" class="btn btn-default" data-toggle="modal" data-target="#logInModal">
+                  Log In
+              </button>
+          </div>
+      {{/if}}
+  </div>
+</template>

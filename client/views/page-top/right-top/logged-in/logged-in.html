@@ -1,0 +1,19 @@
+<template name="loggedIn">
+    <div id="loggedIn">
+        {{#if loggingIn}}
+            {{> loadiing}}
+        {{else}}
+            <div class="dropdown" style="float: right;">
+                <div class="avatar" role="button">
+                    <i class="fa fa-user">
+                    </i>
+                </div>
+                <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">account settings</a></li>
+                    <li role="presentation" class="divider"></li>
+                    <li id="logout" role="presentation"><a role="menuitem" tabindex="-1" href="#">logout</a></li>
+                </ul>
+            </div>
+        {{/if}}
+    </div>
+</template>
