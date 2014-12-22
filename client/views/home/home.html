@@ -1,0 +1,29 @@
+<template name="home">
+    <div id="home">
+        <div class="mask">
+            <nav class="navbar navbar-static-top" role="navigation" style="box-shadow: 0 0 3px rgba(0,0,0,0.5);">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" style="color: #FFFFFF" href="{{pathFor 'home'}}" >{{siteTitle}}</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="main-nav">
+                        <div class="navbar-right">
+                            <a href="#" id="facebook-btn" class="btn btn-default navbar-btn">Sign in with facebook</a>
+                            <a href="#" id="google-btn" class="btn btn-primary navbar-btn">Sign in with google</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="img-holder" data-image="/images/Man-doing-exercises.jpg"></div>
+    <section><p>“My temptation is emotional, and resisting will further my needed weight loss and strengthen my character.  Furthermore, nothing tastes as good as thin feels.” ~ Stephen Covey</p></section>
+    <div class="img-holder" data-image="/images/exercise.jpg"></div>
+    <section><p>What you eat in private you wear in public</p></section>
+</template>

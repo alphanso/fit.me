@@ -3,7 +3,9 @@ Template.loggedIn.events = {
     $(".dropdown").toggleClass('open');
   },
 
-  "click #logout" : function(e, tmpl) {
+  "click #logout-btn" : function(e, tmpl) {
+    e.defaultPrevented;
+    e.stopPropagation();
     Meteor.logout();
   }
 };

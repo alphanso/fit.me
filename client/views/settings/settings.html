@@ -1,0 +1,94 @@
+<template name="settings">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="bb" style="font-size: 26px; padding-bottom: 10px; font-weight: 500">Settings</div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-3" style="padding-right: 0">
+            <ul style="padding-top: 30px;">
+                <li class="user-tab bb"></li>
+                <li id="edit-profile-btn" class="user-tab bb"><i class="fa fa-pencil"></i>&nbsp;Edit Profile<i class="fa fa-angle-right" style="float: right"></i></li>
+                <li id="notification-preference-btn" class="user-tab bb"><i class="fa fa-bell"></i>&nbsp;Notification Preferences<i class="fa fa-angle-right" style="float: right"></i></li>
+                <li id="security-btn" class="user-tab bb"><i class="fa fa-cog"></i>&nbsp;Security<i class="fa fa-angle-right" style="float: right"></i></li>
+            </ul>
+        </div>
+        <div class="col-xs-6" style="border-left: 1px solid #F0F0F0; border-right: 1px solid #F0F0F0; min-height: 600px;">
+            <div id="edit-profile" class="user_settings_tab">
+                <h4 style="margin-bottom: 20px;">Profile Information</h4>
+                {{#autoForm collection="Meteor.users" doc=currentUser id="updateUserProfile" type="update" }}
+                    <div class="row">
+                        <div class="col-xs-6">
+                            {{> afFormGroup name="profile.firstName"}}
+                        </div>
+                        <div class="col-xs-6">
+                            {{> afFormGroup name="profile.lastName"}}
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            {{> afFormGroup name="profile.gender" options="allowed"}}
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            {{> afFormGroup name="profile.city" options="allowed"}}
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            {{> afFormGroup name="profile.bio" rows="4"}}
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            {{> afFormGroup name="profile.organization"}}
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            {{> afFormGroup name="profile.website"}}
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            {{> afFormGroup name="profile.birthday" type="bootstrap-datepicker"}}
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Save</button>
+                {{/autoForm}}
+            </div>
+            <div id="notification-preference" class="user_settings_tab">
+                <h4>Notification Preferences</h4>
+                <div class="row">
+                    <div class="col-xs-offset-10 col-xs-1">
+                        Email
+                    </div>
+                    <div class="col-xs-1">
+                        Mobile
+                    </div>
+                </div>
+                <div class="row bb options" style="margin-top: 15px;">
+                    <div class="col-xs-5">
+                        Activity on my review
+                    </div>
+                    <div class="col-xs-offset-5 col-xs-1">
+                        <input type="checkbox" />
+                    </div>
+                    <div class="col-xs-1">
+                        <input type="checkbox" />
+                    </div>
+                </div>
+            </div>
+            <div id="security" class="user_settings_tab">
+                <h4>Security</h4>
+                <br/>
+                <a href="#">Set Password</a>
+                <br/><br/>
+                <a href="#">Delete my account</a>
+                <br/>
+                Please note that this action is irreversible and all the data associated with your account will be permanently deleted in 30 days
+            </div>
+        </div>
+    </div>
+</template>

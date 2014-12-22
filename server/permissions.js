@@ -1,4 +1,4 @@
-Leads.allow({
+Places.allow({
   'insert': function(userId, doc) {
     return true;
   },

@@ -1,8 +1,19 @@
 Template.signUp.events = {
-  "click #register" : function (event, template) {
-    $(".signup-options").hide();
-    $(".email-register").show();
+  "click #google" : function (event, template) {
+    event.stopPropagation();
+    event.preventDefault();
+    $("#signUpModal").modal('toggle');
+    Meteor.loginWithGoogle({
+      loginStyle: 'popup',
+      requestPermissions: ["openid email profile"]
+    }, function(error) {
+      if(error) {
+        Session.set('errorMessage', err.reason || 'Unknown error');
+      }
+      console.log("logged in with google");
+    });
   },
+
   "click #facebook" : function(event, template) {
     event.stopPropagation();
     event.preventDefault();
@@ -14,7 +25,7 @@ Template.signUp.events = {
       if(error) {
         Session.set('errorMessage', err.reason || 'Unknown error');
       }
-
+      console.log("logged in with facebook");
     });
   }
 };

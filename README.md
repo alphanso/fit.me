@@ -80,7 +80,7 @@ client/
     ├── header.html
     └── index.html
 collections/
-  └── leads.js
+  └── places.js
 packages/
 public/
   ├── fonts/

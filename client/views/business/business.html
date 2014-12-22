@@ -1,0 +1,41 @@
+<template name="business">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="bb" style="font-size: 26px; padding-bottom: 10px; font-weight: 500">Add Business</div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-3" style="padding-right: 0">
+            <ul style="padding-top: 30px;">
+                <li class="place-tab bb"></li>
+                <li id="address-btn" class="place-tab bb"><i class="fa fa-map-marker"></i>&nbsp;Address Information<i class="fa fa-angle-right" style="float: right"></i></li>
+                <li id="contact-btn" class="place-tab bb"><i class="fa fa-phone"></i>&nbsp;Contact Information<i class="fa fa-angle-right" style="float: right"></i></li>
+                <li id="map-location-btn" class="place-tab bb"><i class="fa fa-crosshairs"></i>&nbsp;Position on Map<i class="fa fa-angle-right" style="float: right"></i></li>
+            </ul>
+        </div>
+        <div class="col-xs-6" style="border-left: 1px solid #F0F0F0; border-right: 1px solid #F0F0F0; min-height: 600px;">
+            {{#autoForm collection="Places" id="PlacesForm" type="insert"}}
+                <div id="address-form" class="place-form">
+                    <h4 style="margin-bottom: 20px;">Address Information</h4>
+                    {{> afFormGroup name='businessName'}}
+                    {{#each afFieldNames name="location" omitFields="location.state,location.country"}}
+                        {{> afQuickField name=this options="auto"}}
+                    {{/each}}
+                    <button type="button" id="address-next" class="btn btn-success pull-right">Next</button>
+                </div>
+                <div id="contact-form" class="place-form">
+                    <h4 style="margin-bottom: 20px;">Contact Information</h4>
+                    {{#each afFieldNames name="contact"}}
+                        {{> afQuickField name=this options="auto"}}
+                    {{/each}}
+                    <button type="button" id="contact-next" class="btn btn-success pull-right">Next</button>
+                </div>
+                <div id="map-location-form" class="place-form">
+                    <h4 style="margin-bottom: 20px;">Position on Map</h4>
+                    {{> afQuickField name="loc" }}
+                    <button type="submit" class="btn btn-success pull-right">Submit</button>
+                </div>
+            {{/autoForm}}
+        </div>
+    </div>
+</template>
