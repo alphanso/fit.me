@@ -46,3 +46,10 @@ Template.registerHelper('areValidPasswords', function(password, confirm){
   }
   return true;
 });
+
+Template.registerHelper('loadAsync', function(url, init){
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src = "https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyB8Q3x_NgzZwtXmSxEHEaqMGsgrJCY9Epc";
+  document.body.appendChild(script);
+});

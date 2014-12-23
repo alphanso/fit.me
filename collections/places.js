@@ -48,7 +48,8 @@ PlacesSchema.Location = new SimpleSchema({
 
 PlacesSchema.GeoJSON = new SimpleSchema({
   type: {
-    type: String
+    type: String,
+    optional: true
   },
   coordinates: {
     type: [Number],
@@ -117,15 +118,7 @@ PlacesSchema.Place = new SimpleSchema({
     type: PlacesSchema.Contact
   },
   loc: {
-    type: String,
-    autoform: {
-      afFieldInput: {
-        type: 'map',
-        options: {
-          searchBox: false
-        }
-      }
-    }
+    type: PlacesSchema.GeoJSON
   }
 });
 PlacesSchema.context = PlacesSchema.Place.newContext();
