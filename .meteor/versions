@@ -31,6 +31,7 @@ follower-livedata@1.0.3
 fuatsengul:iron-router-auth@1.0.7
 geojson-utils@1.0.2
 google@1.1.3
+google-maps@1.0.0
 handlebars@1.0.2
 html-tools@1.0.3
 htmljs@1.0.3
