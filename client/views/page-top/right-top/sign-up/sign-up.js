@@ -1,5 +1,5 @@
 Template.signUp.events = {
-  "click #google" : function (event, template) {
+  "click #gogle" : function (event, template) {
     event.stopPropagation();
     event.preventDefault();
     $("#signUpModal").modal('toggle');

@@ -1,4 +1,4 @@
-Template.search.events = {
+Template.placeSearch.events = {
     'click .clear-search' : function (event, template) {
         event.preventDefault();
         template.find('input').value = '';

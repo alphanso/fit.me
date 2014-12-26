@@ -1,14 +1,13 @@
-<template name="mapLayout">
+<template name="search">
   <!--[if lt IE 9]>
     <p class="browser-warning"><strong><i class="icon-exclamation-sign"></i> Warning</strong> - You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" target="_blank">upgrade your browser</a> to properly view this website.</p>
   <![endif]-->
   {{> signUp}}
   {{> logIn}}
-  {{> addPlace}}
-  {{> yield region="top"}}
-  <div class="container-fluid" style="height: 100%">
-    {{> yield}}
+  {{> top}}
+  <div class="container-fluid" style="height: 100%;padding:0;">
+    {{> map context}}
   </div>
 
-  {{> yield region="footer"}}
+  {{> bottom}}
 </template>

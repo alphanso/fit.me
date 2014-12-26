@@ -1,18 +1,8 @@
 Router.map(function() {
 
-  this.route('map', {
+  this.route('search', {
     path: '/search',
-    layoutTemplate: 'mapLayout',
     loadingTemplate: 'loading',
-
-    yieldTemplates: {
-      top: {
-        to: 'top'
-      },
-      bottom: {
-        to: 'footer'
-      }
-    },
 
     onAfterAction: function() {
       $(document).scrollTop(0);
@@ -72,3 +62,5 @@ Router.map(function() {
   });
 
 });
+
+//9886850204
