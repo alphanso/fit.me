@@ -49,7 +49,10 @@ PlacesSchema.Location = new SimpleSchema({
 PlacesSchema.GeoJSON = new SimpleSchema({
   type: {
     type: String,
-    optional: true
+    optional: true,
+    autoValue: function() {
+      return "Point";
+    }
   },
   coordinates: {
     type: [Number],
@@ -81,10 +84,12 @@ PlacesSchema.Contact = new SimpleSchema({
   },
   landlineNumber: {
     type: [Number],
-    optional: true
+    optional: true,
+    regEx: /^[0-9]{10}$/
   },
   mobileNumber: {
-    type: [Number]
+    type: [Number],
+    regEx: /^[0-9]{10}$/
   },
   faxNumber: {
     type: Number,
@@ -111,6 +116,10 @@ PlacesSchema.Place = new SimpleSchema({
     type: String,
     regEx: /^[a-z0-9A-z .]{3,30}$/
   },
+  category: {
+    type: [String],
+    allowedValues: ["Gym", "Spa", "Salons"]
+  },
   location: {
     type: PlacesSchema.Location
   },
@@ -121,6 +130,4 @@ PlacesSchema.Place = new SimpleSchema({
     type: PlacesSchema.GeoJSON
   }
 });
-PlacesSchema.context = PlacesSchema.Place.newContext();
 Places.attachSchema(PlacesSchema.Place);
-Places.permit('insert').apply();

@@ -28,5 +28,3 @@ QuickListSchema = new SimpleSchema({
 });
 
 Qlists.attachSchema(QuickListSchema);
-
-Qlists.permit('insert').apply();

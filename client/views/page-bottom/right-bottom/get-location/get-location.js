@@ -3,7 +3,7 @@ Template.getLocation.events = {
     event.preventDefault();
     event.stopPropagation();
     navigator.geolocation.getCurrentPosition(function(position){
-      var map = Session.map;
+      var map = GoogleMaps.map;
       console.log('Set current position as center of map');
       map.setCenter({lat: position.coords.latitude, lng: position.coords.longitude});
     });

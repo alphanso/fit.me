@@ -1,9 +1,9 @@
 Meteor.startup(function() {
   if(Meteor.isClient) {
     SEO.config({
-      title: 'Fitness Mantra',
+      title: 'Alternates.in',
       meta: {
-        'description': 'Social network about Fitness'
+        'description': 'local directory about all things cool'
       },
       og: {
         'image': Meteor.absoluteUrl('share-image.png')

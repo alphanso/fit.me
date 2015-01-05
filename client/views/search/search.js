@@ -3,7 +3,8 @@ Template.search.helpers({
     return {
       parameters: {
         v:'3.exp',
-        key:'AIzaSyB8Q3x_NgzZwtXmSxEHEaqMGsgrJCY9Epc'
+        key:'AIzaSyB8Q3x_NgzZwtXmSxEHEaqMGsgrJCY9Epc',
+        libraries: 'places'
       },
       mapOptions: {
         zoom: 8,
@@ -15,8 +16,23 @@ Template.search.helpers({
           lng: '79.080598'
         }
       },
+      callback: function(map) {
+        var autocomplete = new google.maps.places.Autocomplete(document.getElementById('placeSearch'), {
+          bounds : map.getBounds(),
+          types: ['(regions)'],
+          componentRestrictions: {
+            country: 'in'
+          }
+        });
+        autocomplete.bindTo('bounds', map);
+        google.maps.event.addListener(autocomplete, 'place_changed', function(){
+          if(autocomplete.getPlace())
+            map.setCenter(autocomplete.getPlace().geometry.location);
+        });
+      },
       id: 'map-canvas',
       style: "height:100%;width:100%;"
     };
   }
 });
+

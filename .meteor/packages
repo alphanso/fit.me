@@ -30,6 +30,7 @@ cunneen:mailgun
 aldeed:autoform-bs-datepicker
 rajit:bootstrap3-datepicker
 ongoworks:security
-yogiben:autoform-map
 
 google-maps
+yogiben:admin
+alanning:roles

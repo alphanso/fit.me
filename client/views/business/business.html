@@ -17,6 +17,8 @@
             {{#autoForm collection="Places" id="PlacesForm" type="insert"}}
                 <div id="address-form" class="place-form">
                     <h4 style="margin-bottom: 20px;">Address Information</h4>
+                    {{> afFieldInput name='category' type="select-checkbox-inline" options="allowed" noselect=true }}
+                    <br/>
                     {{> afFormGroup name='businessName'}}
                     {{#each afFieldNames name="location" omitFields="location.state,location.country"}}
                         {{> afQuickField name=this options="auto"}}
@@ -32,11 +34,18 @@
                 </div>
                 <div id="map-location-form" class="place-form">
                     <h4 style="margin-bottom: 20px;">Position on Map</h4>
-                    <div class="form-group">
+                    <div class="form-group" style="position: relative">
                         <label class="control-label">Location Map</label>
-                        <input type="hidden" name="loc.0" data-schema-key="loc.0"/>
-                        <input type="hidden" name="loc.1" data-schema-key="loc.1"/>
-                        <!-- {{> map}} -->
+                        <input type="hidden" id="lat" name="loc.coordinates.0" data-schema-key="loc.coordinates.0"/>
+                        <input type="hidden" id="lng" name="loc.coordinates.1" data-schema-key="loc.coordinates.1"/>
+                        {{> map context}}
+                        <div id="business-map-left-top">
+                            {{> zoom}}
+                            {{> getLocation}}
+                        </div>
+                        <div id="search-placement">
+                           {{> placeSearch}}
+                        </div>
                     </div>
                     <button type="submit" class="btn btn-success pull-right">Submit</button>
                 </div>

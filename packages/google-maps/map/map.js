@@ -6,7 +6,7 @@ GoogleMaps = {
         GoogleMaps.context.mapOptions.center = center;
         GoogleMaps.map = new google.maps.Map(document.getElementById(GoogleMaps.context.id), GoogleMaps.context.mapOptions);
         if('function'=== typeof GoogleMaps.context.callback)
-            GoogleMaps.context.callback();
+            GoogleMaps.context.callback(GoogleMaps.map);
     }
 };
 
@@ -35,7 +35,7 @@ GoogleMaps.loadScript = function(parameters) {
 Template.map.rendered = function() {
     var parameters = this.data.parameters || {};
     this.firstNode.id = this.data.id;
-    this.firstNode.style = this.data.style;
+    $("#"+this.data.id).attr('style', this.data.style);
     GoogleMaps.context = this.data;
     if(!GoogleMaps.loaded) {
         GoogleMaps.loadScript(parameters);
