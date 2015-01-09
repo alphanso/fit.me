@@ -39,5 +39,7 @@ Template.map.rendered = function() {
     GoogleMaps.context = this.data;
     if(!GoogleMaps.loaded) {
         GoogleMaps.loadScript(parameters);
+    } else {
+        GoogleMaps.callback();
     }
 };

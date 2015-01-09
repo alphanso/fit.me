@@ -1,0 +1,27 @@
+<template name="places">
+    {{#autoForm collection="Places" doc=fakeData id="PlacesForm" type="insert" resetOnSuccess="true"}}
+            {{> afFieldInput name='category' type="select-checkbox-inline" options="allowed" noselect=true }}
+            <br/>
+            {{> afFormGroup name='businessName'}}
+            {{#each afFieldNames name="location" omitFields="location.state,location.country"}}
+                {{> afQuickField name=this options="auto"}}
+            {{/each}}
+            {{#each afFieldNames name="contact"}}
+                {{> afQuickField name=this options="auto"}}
+            {{/each}}
+            <div class="form-group" style="position: relative">
+                <label class="control-label">Location Map</label>
+                <input type="hidden" id="lat" name="loc.coordinates.0" data-schema-key="loc.coordinates.0"/>
+                <input type="hidden" id="lng" name="loc.coordinates.1" data-schema-key="loc.coordinates.1"/>
+                {{> map context}}
+                <div id="business-map-left-top">
+                    {{> zoom}}
+                    {{> getLocation}}
+                </div>
+                <div id="search-placement">
+                    {{> placeSearch}}
+                </div>
+            </div>
+            <button type="submit" class="btn btn-success">Submit</button>
+    {{/autoForm}}
+</template>

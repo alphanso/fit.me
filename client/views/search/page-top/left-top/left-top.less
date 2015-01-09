@@ -1,0 +1,81 @@
+@gym : #00385C;
+@spa:  #81c99c;
+@haircare: #009F4F;
+
+#categories {
+  left: 15px;
+  position: relative;
+
+  ul {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    list-style: outside none none;
+    margin: 0px;
+    position: relative;
+    width: 1000px;
+    padding: 0;
+  }
+
+  li {
+    box-sizing: border-box;
+    flex: 0 0 41px;
+    background: none repeat scroll 0% 0% #FFF;
+    border-left: 1px solid #F9F9F9;
+    cursor: pointer;
+    max-width: 41px;
+    width: 41px;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    float: left;
+  }
+
+  i {
+    display: block;
+    font-size: 26px;
+    line-height: 34px;
+  }
+
+  .map-icon-gym {
+    color: @gym;
+  }
+
+  .map-icon-spa {
+    color: @spa;
+  }
+
+  .map-icon-hair-care {
+    color: @haircare;
+  }
+
+  li:hover, li.selected {
+    i {
+      color : #ffffff;
+    }
+
+    .map-icon-gym {
+      background-color: @gym;
+    }
+
+    .map-icon-spa {
+      background-color: @spa;
+    }
+
+    .map-icon-hair-care {
+      background-color: @haircare;
+    }
+  }
+
+  li:first-child {
+    border-left: medium none;
+    border-radius: 4px 0 0 4px;
+  }
+
+  li:last-child {
+    border-right: medium none;
+    border-radius: 0 4px 4px 0;
+  }
+
+
+}

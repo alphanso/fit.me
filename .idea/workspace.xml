@@ -2,33 +2,54 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7cb4b24-5b25-49cf-810e-535eb1cfc4a8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collections/common/adminConfig.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collections/server/places.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collections/server/quick list.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/views/list/list.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/views/list/list.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/views/list/list.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/views/page-top/search/search.less" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/collections/places.js" afterPath="$PROJECT_DIR$/collections/common/places.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/collections/quick list.js" afterPath="$PROJECT_DIR$/collections/common/quick list.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/collections/users.js" afterPath="$PROJECT_DIR$/collections/common/users.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/business/business.html" afterPath="$PROJECT_DIR$/client/views/business/business.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/business/business.js" afterPath="$PROJECT_DIR$/client/views/business/business.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/business/business.less" afterPath="$PROJECT_DIR$/client/views/business/business.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/page-bottom/right-bottom/get-location/get-location.js" afterPath="$PROJECT_DIR$/client/views/page-bottom/right-bottom/get-location/get-location.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/page-bottom/right-bottom/get-location/get-location.less" afterPath="$PROJECT_DIR$/client/views/page-bottom/right-bottom/get-location/get-location.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/index.html" afterPath="$PROJECT_DIR$/client/views/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/packages/google-maps/map/map.html" afterPath="$PROJECT_DIR$/packages/google-maps/map/map.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/search/page-top/left-top/left-top.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/search/page-top/left-top/left-top.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/admin/places/places.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/search/page-top/right-top/right-top.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/shared/zoom/zoom.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/views/page-bottom/right-bottom/zoom/zoom.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/permissions.js" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/footer.html" afterPath="$PROJECT_DIR$/client/views/shared/footer.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/header.html" afterPath="$PROJECT_DIR$/client/views/shared/header.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/index.html" afterPath="$PROJECT_DIR$/client/views/shared/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/layouts/defaultLayout.html" afterPath="$PROJECT_DIR$/client/views/shared/layouts/defaultLayout.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/loading.html" afterPath="$PROJECT_DIR$/client/views/shared/loading.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/page-bottom/bottom.html" afterPath="$PROJECT_DIR$/client/views/search/page-bottom/bottom.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/page-bottom/bottom.less" afterPath="$PROJECT_DIR$/client/views/search/page-bottom/bottom.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/page-bottom/left-bottom/feedback/feedback.css" afterPath="$PROJECT_DIR$/client/views/search/page-bottom/left-bottom/feedback/feedback.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/page-bottom/left-bottom/feedback/feedback.html" afterPath="$PROJECT_DIR$/client/views/search/page-bottom/left-bottom/feedback/feedback.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/page-bottom/left-bottom/feedback/left-bottom.less" afterPath="$PROJECT_DIR$/client/views/search/page-bottom/left-bottom/feedback/left-bottom.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/page-bottom/left-bottom/left-bottom.html" afterPath="$PROJECT_DIR$/client/views/search/page-bottom/left-bottom/left-bottom.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/page-bottom/right-bottom/get-location/get-location.html" afterPath="$PROJECT_DIR$/client/views/search/page-bottom/right-bottom/get-location/get-location.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/page-bottom/right-bottom/get-location/get-location.js" afterPath="$PROJECT_DIR$/client/views/search/page-bottom/right-bottom/get-location/get-location.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/page-bottom/right-bottom/get-location/get-location.less" afterPath="$PROJECT_DIR$/client/views/search/page-bottom/right-bottom/get-location/get-location.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/page-bottom/right-bottom/right-bottom.css" afterPath="$PROJECT_DIR$/client/views/search/page-bottom/right-bottom/right-bottom.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/page-bottom/right-bottom/right-bottom.html" afterPath="$PROJECT_DIR$/client/views/search/page-bottom/right-bottom/right-bottom.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/page-bottom/right-bottom/zoom/zoom.css" afterPath="$PROJECT_DIR$/client/views/shared/zoom/zoom.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/page-bottom/right-bottom/zoom/zoom.html" afterPath="$PROJECT_DIR$/client/views/shared/zoom/zoom.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/page-top/left-top/left-top.html" afterPath="$PROJECT_DIR$/client/views/search/page-top/left-top/left-top.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/page-top/right-top/logged-in/logged-in.html" afterPath="$PROJECT_DIR$/client/views/search/page-top/right-top/logged-in/logged-in.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/page-top/right-top/logged-in/logged-in.js" afterPath="$PROJECT_DIR$/client/views/search/page-top/right-top/logged-in/logged-in.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/page-top/right-top/logged-in/logged-in.less" afterPath="$PROJECT_DIR$/client/views/search/page-top/right-top/logged-in/logged-in.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/page-top/right-top/login/login.html" afterPath="$PROJECT_DIR$/client/views/search/page-top/right-top/login/login.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/page-top/right-top/login/login.js" afterPath="$PROJECT_DIR$/client/views/search/page-top/right-top/login/login.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/page-top/right-top/login/login.less" afterPath="$PROJECT_DIR$/client/views/search/page-top/right-top/login/login.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/page-top/right-top/right-top.html" afterPath="$PROJECT_DIR$/client/views/search/page-top/right-top/right-top.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/page-top/right-top/right-top.js" afterPath="$PROJECT_DIR$/client/views/search/page-top/right-top/right-top.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/page-top/right-top/right-top.less" afterPath="$PROJECT_DIR$/client/views/admin/places/places.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/page-top/right-top/sign-up/sign-up.html" afterPath="$PROJECT_DIR$/client/views/search/page-top/right-top/sign-up/sign-up.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/page-top/right-top/sign-up/sign-up.js" afterPath="$PROJECT_DIR$/client/views/search/page-top/right-top/sign-up/sign-up.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/page-top/right-top/sign-up/sign-up.less" afterPath="$PROJECT_DIR$/client/views/search/page-top/right-top/sign-up/sign-up.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/page-top/search/search.html" afterPath="$PROJECT_DIR$/client/views/search/page-top/search/search.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/page-top/search/search.js" afterPath="$PROJECT_DIR$/client/views/search/page-top/search/search.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/page-top/top.html" afterPath="$PROJECT_DIR$/client/views/search/page-top/top.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/page-top/top.less" afterPath="$PROJECT_DIR$/client/views/search/page-top/top.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collections/common/adminConfig.js" afterPath="$PROJECT_DIR$/collections/common/adminConfig.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/packages/google-maps/map/map.js" afterPath="$PROJECT_DIR$/packages/google-maps/map/map.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.meteor/packages" afterPath="$PROJECT_DIR$/.meteor/packages" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/page-top/search/search.html" afterPath="$PROJECT_DIR$/client/views/page-top/search/search.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/page-top/search/search.js" afterPath="$PROJECT_DIR$/client/views/page-top/search/search.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/search/search.js" afterPath="$PROJECT_DIR$/client/views/search/search.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seo.js" afterPath="$PROJECT_DIR$/seo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/page-top/top.html" afterPath="$PROJECT_DIR$/client/views/page-top/top.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.meteor/versions" afterPath="$PROJECT_DIR$/.meteor/versions" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/page-bottom/right-bottom/zoom/zoom.js" afterPath="$PROJECT_DIR$/client/views/page-bottom/right-bottom/zoom/zoom.js" />
     </list>
     <ignored path="fit.me.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -52,76 +73,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="business.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/views/business/business.html">
+      <file leaf-file-name="left-top.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/views/search/page-top/left-top/left-top.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.5" vertical-offset="0" max-vertical-offset="900">
-              <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
-              <folding>
-                <element signature="n#style#0;n#h4#0;n#div#0;n#div#1;n#div#1;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h4#0;n#div#1;n#div#1;n#div#1;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h4#0;n#div#2;n#div#1;n#div#1;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#2;n#div#1;n#div#1;n#template#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/views/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.5" vertical-offset="0" max-vertical-offset="390">
-              <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="384" max-vertical-offset="1005">
+              <caret line="53" column="31" selection-start-line="53" selection-start-column="31" selection-end-line="53" selection-end-column="31" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="defaultLayout.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/views/layouts/defaultLayout.html">
+      <file leaf-file-name="left-top.less" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/client/views/search/page-top/left-top/left-top.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="270">
-              <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="header.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/views/header.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="5.75" vertical-offset="318" max-vertical-offset="780">
-              <caret line="12" column="72" selection-start-line="12" selection-start-column="63" selection-end-line="12" selection-end-column="72" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/client/views/home/home.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.22077923" vertical-offset="48" max-vertical-offset="510">
-              <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="seo.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/seo.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
-              <caret line="5" column="61" selection-start-line="5" selection-start-column="61" selection-end-line="5" selection-end-column="61" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="places.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/collections/common/places.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1599" max-vertical-offset="2085">
-              <caret line="120" column="10" selection-start-line="120" selection-start-column="10" selection-end-line="120" selection-end-column="10" />
+            <state vertical-scroll-proportion="0.4783599" vertical-offset="180" max-vertical-offset="1290">
+              <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -135,19 +101,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/client/views/footer.html" />
-        <option value="$PROJECT_DIR$/client/stylesheets/bootstrap-ext/type.import.less" />
-        <option value="$PROJECT_DIR$/client/stylesheets/global.less" />
-        <option value="$PROJECT_DIR$/client/views/settings/settings.less" />
-        <option value="$PROJECT_DIR$/collections/users.js" />
-        <option value="$PROJECT_DIR$/client/views/home/home.less" />
-        <option value="$PROJECT_DIR$/client/views/home/home.js" />
-        <option value="$PROJECT_DIR$/client/stylesheets/bootstrap/mixins.import.less" />
-        <option value="$PROJECT_DIR$/client/views/qlist/qlist.html" />
-        <option value="$PROJECT_DIR$/client/views/settings/settings.js" />
-        <option value="$PROJECT_DIR$/client/views/settings/settings.html" />
-        <option value="$PROJECT_DIR$/client/views/map/map.js" />
-        <option value="$PROJECT_DIR$/packages/google-maps/templates/map/map.js" />
         <option value="$PROJECT_DIR$/packages/google-maps/google-maps.js" />
         <option value="$PROJECT_DIR$/client/views/map/map.html" />
         <option value="$PROJECT_DIR$/packages/google-maps/google-maps-tests.js" />
@@ -162,30 +115,43 @@
         <option value="$PROJECT_DIR$/client/views/header.html" />
         <option value="$PROJECT_DIR$/packages/google-maps/map/map.html" />
         <option value="$PROJECT_DIR$/client/views/search/search.html" />
-        <option value="$PROJECT_DIR$/packages/google-maps/map/map.js" />
         <option value="$PROJECT_DIR$/client/views/page-bottom/right-bottom/zoom/zoom.js" />
         <option value="$PROJECT_DIR$/client/views/page-bottom/right-bottom/get-location/get-location.less" />
         <option value="$PROJECT_DIR$/collections/places.js" />
         <option value="$PROJECT_DIR$/server/Permissions/places.js" />
         <option value="$PROJECT_DIR$/collections/quick list.js" />
         <option value="$PROJECT_DIR$/server/Permissions/quick list.js" />
-        <option value="$PROJECT_DIR$/collections/common/adminConfig.js" />
         <option value="$PROJECT_DIR$/collections/common/users.js" />
         <option value="$PROJECT_DIR$/mup.json" />
         <option value="$PROJECT_DIR$/client/views/index.html" />
         <option value="$PROJECT_DIR$/client/views/page-top/search/search.js" />
         <option value="$PROJECT_DIR$/client/views/page-bottom/right-bottom/get-location/get-location.js" />
         <option value="$PROJECT_DIR$/client/views/page-top/search/search.less" />
-        <option value="$PROJECT_DIR$/client/views/search/search.js" />
         <option value="$PROJECT_DIR$/client/views/business/business.js" />
         <option value="$PROJECT_DIR$/client/views/business/business.less" />
         <option value="$PROJECT_DIR$/client/views/page-top/top.html" />
         <option value="$PROJECT_DIR$/client/views/page-top/search/search.html" />
-        <option value="$PROJECT_DIR$/collections/server/places.js" />
         <option value="$PROJECT_DIR$/collections/common/places.js" />
         <option value="$PROJECT_DIR$/client/views/business/business.html" />
         <option value="$PROJECT_DIR$/seo.js" />
         <option value="$PROJECT_DIR$/client/views/home/home.html" />
+        <option value="$PROJECT_DIR$/client/views/search/page-top/left-top/left-top.html" />
+        <option value="$PROJECT_DIR$/client/compatibility/map-icons.js" />
+        <option value="$PROJECT_DIR$/collections/server/places.js" />
+        <option value="$PROJECT_DIR$/collections/common/adminConfig.js" />
+        <option value="$PROJECT_DIR$/client/views/search/page-bottom/right-bottom/zoom/zoom.js" />
+        <option value="$PROJECT_DIR$/client/views/admin/places/places.js" />
+        <option value="$PROJECT_DIR$/client/views/admin/places/places.html" />
+        <option value="$PROJECT_DIR$/client/views/search/page-top/left-top/left-top.js" />
+        <option value="$PROJECT_DIR$/packages/google-maps/map/map.js" />
+        <option value="$PROJECT_DIR$/client/views/search/page-top/search/search.html" />
+        <option value="$PROJECT_DIR$/client/views/search/search.js" />
+        <option value="$PROJECT_DIR$/client/views/search/page-top/search/search.js" />
+        <option value="$PROJECT_DIR$/client/views/shared/zoom/zoom.html" />
+        <option value="$PROJECT_DIR$/client/views/shared/zoom/zoom.css" />
+        <option value="$PROJECT_DIR$/client/views/shared/zoom/zoom.less" />
+        <option value="$PROJECT_DIR$/client/views/shared/zoom/zoom.js" />
+        <option value="$PROJECT_DIR$/client/views/search/page-top/left-top/left-top.less" />
       </list>
     </option>
   </component>
@@ -219,6 +185,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -247,7 +214,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="collections" />
+              <option name="myItemId" value="packages" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -261,11 +228,33 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="collections" />
+              <option name="myItemId" value="packages" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
+              <option name="myItemId" value="google-maps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fit.me" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fit.me" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="packages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="google-maps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="map" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -327,7 +316,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="layouts" />
+              <option name="myItemId" value="search" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="page-top" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -349,7 +342,71 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="home" />
+              <option name="myItemId" value="search" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="page-top" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="left-top" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fit.me" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fit.me" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="search" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="page-bottom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fit.me" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fit.me" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="search" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="page-bottom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="right-bottom" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -369,7 +426,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -394,11 +450,11 @@
       <recent name="$PROJECT_DIR$/client/stylesheets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client/views/shared" />
+      <recent name="$PROJECT_DIR$/client/views/search" />
       <recent name="$PROJECT_DIR$/collections/server" />
       <recent name="$PROJECT_DIR$/collections/common" />
-      <recent name="$PROJECT_DIR$/client/views/search" />
       <recent name="$PROJECT_DIR$/packages/google-maps" />
-      <recent name="$PROJECT_DIR$/client/compatibility" />
     </key>
   </component>
   <component name="RunManager">
@@ -476,10 +532,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329235" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29589042" sideWeight="0.49960285" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29508197" sideWeight="0.49960285" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32786885" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2494043" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -499,6 +555,28 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329235" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329235" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29508197" sideWeight="0.49960285" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32786885" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29508197" sideWeight="0.50039715" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329235" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32786885" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2494043" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2494043" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329235" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -523,83 +601,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/packages.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="488">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/footer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.032327585" vertical-offset="0" max-vertical-offset="464">
-          <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/google-maps/package.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
-          <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/page-top/right-top/sign-up/sign-up.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
-          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/page-top/right-top/sign-up/sign-up.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="345">
-          <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/page-top/left-top/left-top.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="704">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/page-top/right-top/right-top.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="488">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/page-top/right-top/logged-in/logged-in.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="375">
-          <caret line="12" column="100" selection-start-line="12" selection-start-column="100" selection-end-line="12" selection-end-column="100" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/qlist/qlist.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13235295" vertical-offset="0" max-vertical-offset="680">
-          <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.3012295" vertical-offset="340" max-vertical-offset="1065">
-          <caret line="65" column="12" selection-start-line="65" selection-start-column="12" selection-end-line="65" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/helpers/stringHelpers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.81557375" vertical-offset="307" max-vertical-offset="795">
-          <caret line="47" column="3" selection-start-line="47" selection-start-column="3" selection-end-line="47" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/packages/google-maps/google-maps-tests.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.15368852" vertical-offset="0" max-vertical-offset="488">
@@ -628,38 +629,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/page-bottom/right-bottom/get-location/get-location.less">
+    <entry file="file://$PROJECT_DIR$/client/views/search/page-bottom/right-bottom/get-location/get-location.less">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.23917995" vertical-offset="0" max-vertical-offset="439">
           <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/page-bottom/bottom.html">
+    <entry file="file://$PROJECT_DIR$/client/views/search/page-bottom/bottom.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.16163793" vertical-offset="0" max-vertical-offset="464">
           <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/page-bottom/bottom.less">
+    <entry file="file://$PROJECT_DIR$/client/views/search/page-bottom/bottom.less">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.10250569" vertical-offset="0" max-vertical-offset="439">
           <caret line="3" column="12" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/page-bottom/right-bottom/right-bottom.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.09221312" vertical-offset="0" max-vertical-offset="488">
-          <caret line="3" column="9" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/page-bottom/right-bottom/right-bottom.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.06465517" vertical-offset="0" max-vertical-offset="464">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -691,17 +678,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/page-bottom/right-bottom/get-location/get-location.html">
+    <entry file="file://$PROJECT_DIR$/client/views/search/page-bottom/right-bottom/get-location/get-location.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.625" vertical-offset="0" max-vertical-offset="180">
           <caret line="1" column="8" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/permissions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="488">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -719,91 +699,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.meteor/local/build/programs/server/packages/yogiben_admin.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.55123" vertical-offset="9420" max-vertical-offset="10470">
-          <caret line="57" column="14" selection-start-line="57" selection-start-column="9" selection-end-line="57" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/collections/common/users.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5081967" vertical-offset="892" max-vertical-offset="1395">
-          <caret line="76" column="14" selection-start-line="76" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/collections/common/adminConfig.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12295082" vertical-offset="0" max-vertical-offset="488">
-          <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/page-bottom/right-bottom/zoom/zoom.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30864197" vertical-offset="0" max-vertical-offset="486">
-          <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/page-bottom/right-bottom/zoom/zoom.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="486">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/google-maps/map/map.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24691358" vertical-offset="0" max-vertical-offset="720">
-          <caret line="8" column="54" selection-start-line="8" selection-start-column="54" selection-end-line="8" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/google-maps/map/map.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.032467533" vertical-offset="0" max-vertical-offset="462">
-          <caret line="1" column="29" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/search/search.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25974026" vertical-offset="0" max-vertical-offset="462">
-          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/page-top/search/search.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35714287" vertical-offset="0" max-vertical-offset="462">
-          <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/search/search.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2777778" vertical-offset="150" max-vertical-offset="660">
-          <caret line="19" column="101" selection-start-line="19" selection-start-column="101" selection-end-line="19" selection-end-column="101" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/page-top/search/search.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.67901236" vertical-offset="0" max-vertical-offset="486">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/views/business/business.less">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.44622424" vertical-offset="0" max-vertical-offset="437">
@@ -812,95 +707,278 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/business/business.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44444445" vertical-offset="1314" max-vertical-offset="1890">
-          <caret line="102" column="24" selection-start-line="102" selection-start-column="24" selection-end-line="102" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/page-bottom/right-bottom/get-location/get-location.js">
+    <entry file="file://$PROJECT_DIR$/client/views/search/page-bottom/right-bottom/get-location/get-location.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.21604939" vertical-offset="0" max-vertical-offset="486">
           <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/shared/layouts/defaultLayout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2262931" vertical-offset="0" max-vertical-offset="464">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/home/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.51724136" vertical-offset="0" max-vertical-offset="510">
+          <caret line="16" column="38" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.15368852" vertical-offset="0" max-vertical-offset="488">
+          <caret line="5" column="61" selection-start-line="5" selection-start-column="61" selection-end-line="5" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/shared/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2647059" vertical-offset="0" max-vertical-offset="780">
+          <caret line="12" column="72" selection-start-line="12" selection-start-column="63" selection-end-line="12" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/shared/footer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.022058824" vertical-offset="0" max-vertical-offset="680">
+          <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/shared/loading.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.04411765" vertical-offset="0" max-vertical-offset="680">
+          <caret line="2" column="16" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/shared/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.44117647" vertical-offset="0" max-vertical-offset="680">
+          <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/search/page-top/top.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.12987013" vertical-offset="0" max-vertical-offset="462">
+          <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/search/page-top/top.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="488">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/page-top/top.html">
+    <entry file="file://$PROJECT_DIR$/collections/common/users.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12987013" vertical-offset="0" max-vertical-offset="462">
-          <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
-          <folding />
+        <state vertical-scroll-proportion="0.47530866" vertical-offset="909" max-vertical-offset="1395">
+          <caret line="76" column="14" selection-start-line="76" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/collections/server/places.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.030864198" vertical-offset="0" max-vertical-offset="486">
-          <caret line="1" column="29" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/business/business.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.09259259" vertical-offset="990" max-vertical-offset="1890">
+          <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="118" selection-end-column="3" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/collections/common/places.js">
+    <entry file="file://$PROJECT_DIR$/.meteor/local/build/programs/server/packages/yogiben_admin.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1599" max-vertical-offset="2085">
-          <caret line="120" column="10" selection-start-line="120" selection-start-column="10" selection-end-line="120" selection-end-column="10" />
+        <state vertical-scroll-proportion="-18.78395" vertical-offset="9984" max-vertical-offset="10470">
+          <caret line="57" column="14" selection-start-line="57" selection-start-column="9" selection-end-line="57" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.meteor/local/build/programs/server/packages/yogiben_admin.js.map">
+      <provider editor-type-id="sourcemapFileViewerProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="456">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collections/common/adminConfig.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.37037036" vertical-offset="0" max-vertical-offset="495">
+          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/search/page-top/left-top/left-top.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.064935066" vertical-offset="0" max-vertical-offset="462">
+          <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/views/business/business.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.5" vertical-offset="0" max-vertical-offset="900">
-          <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+        <state vertical-scroll-proportion="-0.24675325" vertical-offset="414" max-vertical-offset="900">
+          <caret line="20" column="25" selection-start-line="0" selection-start-column="0" selection-end-line="54" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/search/search.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16233766" vertical-offset="0" max-vertical-offset="462">
+          <caret line="5" column="5" selection-start-line="5" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1065">
+          <caret line="65" column="12" selection-start-line="65" selection-start-column="12" selection-end-line="65" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collections/common/places.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.5308642" vertical-offset="1584" max-vertical-offset="2085">
+          <caret line="56" column="13" selection-start-line="56" selection-start-column="2" selection-end-line="56" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/search/page-top/search/search.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.032327585" vertical-offset="0" max-vertical-offset="464">
+          <caret line="1" column="48" selection-start-line="1" selection-start-column="48" selection-end-line="1" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="488">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/search/page-top/search/search.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.46106556" vertical-offset="0" max-vertical-offset="488">
+          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/shared/zoom/zoom.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.19396552" vertical-offset="0" max-vertical-offset="464">
+          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/google-maps/map/map.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.625" vertical-offset="0" max-vertical-offset="120">
+          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
           <folding>
-            <element signature="n#style#0;n#h4#0;n#div#0;n#div#1;n#div#1;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h4#0;n#div#1;n#div#1;n#div#1;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h4#0;n#div#2;n#div#1;n#div#1;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#2;n#div#1;n#div#1;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#template#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/index.html">
+    <entry file="file://$PROJECT_DIR$/client/views/search/search.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.5" vertical-offset="0" max-vertical-offset="390">
-          <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+        <state vertical-scroll-proportion="0.7991803" vertical-offset="180" max-vertical-offset="690">
+          <caret line="38" column="3" selection-start-line="38" selection-start-column="3" selection-end-line="38" selection-end-column="3" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/layouts/defaultLayout.html">
+    <entry file="file://$PROJECT_DIR$/client/views/shared/zoom/zoom.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="270">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.12295082" vertical-offset="0" max-vertical-offset="488">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/seo.js">
+    <entry file="file://$PROJECT_DIR$/packages/google-maps/map/map.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
-          <caret line="5" column="61" selection-start-line="5" selection-start-column="61" selection-end-line="5" selection-end-column="61" />
+        <state vertical-scroll-proportion="0.66188526" vertical-offset="262" max-vertical-offset="750">
+          <caret line="39" column="25" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/header.html">
+    <entry file="file://$PROJECT_DIR$/client/views/shared/zoom/zoom.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="5.75" vertical-offset="318" max-vertical-offset="780">
-          <caret line="12" column="72" selection-start-line="12" selection-start-column="63" selection-end-line="12" selection-end-column="72" />
+        <state vertical-scroll-proportion="0.032327585" vertical-offset="0" max-vertical-offset="464">
+          <caret line="1" column="27" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/home/home.html">
+    <entry file="file://$PROJECT_DIR$/client/views/search/page-bottom/right-bottom/right-bottom.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22077923" vertical-offset="48" max-vertical-offset="510">
-          <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
+        <state vertical-scroll-proportion="0.09221312" vertical-offset="0" max-vertical-offset="488">
+          <caret line="3" column="9" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/search/page-bottom/right-bottom/right-bottom.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.06465517" vertical-offset="0" max-vertical-offset="464">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/admin/places/places.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.1987705" vertical-offset="0" max-vertical-offset="1125">
+          <caret line="39" column="25" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/admin/places/places.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.58189654" vertical-offset="0" max-vertical-offset="480">
+          <caret line="18" column="35" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/search/page-top/left-top/left-top.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="384" max-vertical-offset="1005">
+          <caret line="53" column="31" selection-start-line="53" selection-start-column="31" selection-end-line="53" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/search/page-top/left-top/left-top.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4783599" vertical-offset="180" max-vertical-offset="1290">
+          <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
           <folding />
         </state>
       </provider>
